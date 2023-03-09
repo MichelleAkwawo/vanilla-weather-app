@@ -19,9 +19,47 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Hello World</h1>
-      <a href="" class="btn btn-primary"> Click me </a>
+    <div class="container p-5">
+      <div class="box">
+        <form>
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                class="search-input"
+              />
+            </div>
+            <div class="col-3 p-0">
+              <input
+                type="submit"
+                value="Search"
+                id="search-btn"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </div>
+        </form>
+        <hr />
+        <div class="weatherInfo">
+          <div class="row">
+            <div class="col-6">
+              <h1>New York</h1>
+              <ul>
+                <li>
+                  <span class="todays-date"> </span>
+                  , few clouds
+                </li>
+                <li class="humidity-and-wind">
+                  "Humidity: "
+                  <strong></strong>,
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-8"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
