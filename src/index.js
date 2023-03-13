@@ -26,8 +26,6 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data.temperature.current);
-
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.temperature.current
   );
@@ -50,7 +48,7 @@ function displayTemperature(response) {
 }
 
 let apikey = "ac4718tebo0140d763b189a9af37eaa4";
-let apiurl = `https://api.shecodes.io/weather/v1/current?query="New York"&key=${apikey}&units=metric`;
-console.log(apiurl);
+let city = "New York";
+let apiurl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
 
 axios.get(apiurl).then(displayTemperature);
