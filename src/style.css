@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #c4dee9;
 }
 
 h1 {
@@ -65,7 +66,7 @@ a {
 
 .weather-box {
   padding: 20px;
-  background-color: rgb(245, 244, 241);
+  background-color: #ffff;
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
