@@ -29,18 +29,6 @@ li:first-letter {
   text-transform: capitalize;
 }
 
-.weather-box-wrapper {
-  margin: 40px auto;
-  max-width: 600px;
-}
-
-.weather-box {
-  padding: 20px;
-  background-color: rgb(245, 244, 241);
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-
 #search-btn {
   background-color: #885df1;
   color: #ffff;
@@ -54,17 +42,28 @@ li:first-letter {
   padding: 15px 0;
 }
 
-.search-input {
+#search-input {
   background: #f9f7fe;
   border: none;
   border-radius: 6px;
-  color: rgba(39, 33, 66, 0.4);
   display: inline-block;
   font-size: 16px;
   height: 50px;
   line-height: 20px;
   padding: 15px 20px;
   width: 100%;
+}
+
+.weather-box-wrapper {
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.weather-box {
+  padding: 20px;
+  background-color: rgb(245, 244, 241);
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 
 .overview {

@@ -22,15 +22,16 @@
   </head>
   <body>
     <div class="container p-5">
-      <div class="box-wrapper">
+      <div class="weather-box-wrapper">
         <div class="weather-box">
-          <form>
+          <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
                 <input
                   type="search"
                   placeholder="Enter a city.."
-                  class="search-input"
+                  id="search-input"
+                  autocomplete="off"
                 />
               </div>
               <div class="col-3 p-0">
