@@ -45,6 +45,14 @@ function displayTemperature(response) {
   document.querySelector("#date").innerHTML = formatDate(
     response.data.time * 1000
   );
+
+  document
+    .querySelector("#icon")
+    .setAttribute("src", response.data.condition.icon_url);
+
+  document
+    .querySelector("#icon")
+    .setAttribute("alt", response.data.condition.description);
 }
 
 let apikey = "ac4718tebo0140d763b189a9af37eaa4";
