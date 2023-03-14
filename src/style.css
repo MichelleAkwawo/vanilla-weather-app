@@ -1,10 +1,17 @@
 body {
   font-family: Arial, sans-serif;
+  font-family: monospace;
   background-color: #c4dee9;
+  /* background-image: url("https://github.com/fbibi4/My-Weather-App/blob/master/images/clouds.2.jpg?raw=true"); */
+  background-image: url("../images/bg-img.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
-  color: #878787;
+  /* color: #878787; */
+  color: #546389;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -20,7 +27,8 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-  color: rgb(135, 135, 135);
+  /* color: rgb(135, 135, 135); */
+  color: #546389;
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -35,10 +43,9 @@ a {
 }
 
 #search-btn {
-  background-color: #885df1;
+  background-color: #546389;
   color: #ffff;
   padding: 15px 20px;
-
   border: 0;
   border-radius: 10px;
   font-size: 16px;
@@ -66,9 +73,10 @@ a {
 
 .weather-box {
   padding: 20px;
-  background-color: #ffff;
+  /* background-color: #ffff; */
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background-color: #d3cce0;
 }
 
 .overview {
@@ -93,10 +101,10 @@ a {
   font-size: 16px;
 }
 
-.weather-temperature .active-link {
+/* .weather-temperature .active-link {
   color: rgb(33, 33, 33);
   cursor: default;
-}
+} */
 
 .weather-temperature .active-link:hover {
   text-decoration: none;
@@ -105,7 +113,8 @@ a {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  /* color: #000; */
+  color: #43506f;
 }
 
 .weather-forcast-date {
