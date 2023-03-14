@@ -101,3 +101,22 @@ a {
 .weather-temperature .active-link:hover {
   text-decoration: none;
 }
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forcast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperature {
+  font-size: 13px;
+}
