@@ -41,7 +41,6 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
 
-  let days = ["Wed", "Thur", "Fri", "Sat"];
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
@@ -126,36 +125,7 @@ function handleSubmit(event) {
   search(document.querySelector("#search-input").value);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  //   Add active-link class from the celcuis link
-  celsiusLink.classList.remove("active-link");
-  fahrenheitLink.classList.add("active-link");
-  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-
-  celsiusLink.classList.add("active-link");
-  fahrenheitLink.classList.remove("active-link");
-
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
 search("New York");
-// displayForecast();
